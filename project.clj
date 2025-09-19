@@ -1,8 +1,8 @@
 (defproject sudoku "0.1.0-SNAPSHOT"
   :description "sudoku implements in clojurescript"
   :url "nifle3.github.io/sudoku"
-  :license {:name "NIX"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "MIT"
+            :url "https://github.com/nifle3/sudoku/blob/main/LICENSE"}
 
   :min-lein-version "2.9.1"
 
