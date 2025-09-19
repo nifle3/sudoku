@@ -1,2 +1,53 @@
-/* some style */
+:root {
+    --cell-size: 4rem;
+    --block-size: calc(3 * var(--cell-size));
+    --cell-font-size: 2rem;
+    --cell-font-mini-size: calc(var(--cell-size) / 9);
+    --thin-border: 1px solid black;
+    --thick-border: 2px solid black;
 
+html, body, .root-div {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.root-div {
+    display: flex;
+    justify-content: center;
+}
+
+.sudoku-wrapper {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, var(--block-size));
+    grid-template-rows: repeat(3, var(--block-size));
+    grid-gap: 0;
+    border: var(--thick-border);
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(3, var(--cell-size));
+    grid-template-rows: repeat(3, var(--cell-size));
+    align-items: stretch;
+    justify-items: stretch;
+    border: var(--thick-border);
+    box-sizing: border-box;
+}
+
+.cell {
+    border: var(--thin-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--cell-font-size);
+    box-sizing: border-box;
+}
+
+.cell.active {
+    background-color: #e0f7fa;
+    border-color: #007bff;
+}
