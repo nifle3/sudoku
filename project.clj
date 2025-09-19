@@ -1,7 +1,7 @@
 (defproject sudoku "0.1.0-SNAPSHOT"
-  :description "FIXME: write this!"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
+  :description "sudoku implements in clojurescript"
+  :url "nifle3.github.io/sudoku"
+  :license {:name "NIX"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :min-lein-version "2.9.1"
